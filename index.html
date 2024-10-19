@@ -14,7 +14,7 @@
         <div>
           <h3 class="text-lg font-medium text-warm-gray-900">Liste des commentaires</h3>          
           <!-- COMMENTS  -->
-          <div id="com-*ment-list" class="-my-4">
+          <div id="comments-list" class="-my-4">
                         
               <div class="flex space-x-4 text-sm text-gray-500">
                 <div class="flex-1 py-10 ">
@@ -47,15 +47,20 @@
       </div>
       <div class="py-10 lg:col-span-2 xl:py-12">
         <h3 class="text-lg font-medium text-warm-gray-900">Écrire un commentaire</h3>
-        <div id="comments-list">
+        <div>
           <!-- Commentaire à cloner -->
-          <div id="message_to_clone" style="display:none;">
-              <h3>Nom de l'utilisateur</h3>
-              <p>Message de l'utilisateur</p>
+          <div id="message_to_clone" style="display:none;"
+           class="flex space-x-4 text-sm text-gray-500">
+            <div class="flex-1 py-10 border-t border-gray-200">
+              <h3 class="font-medium text-gray-900">Nom de l'utilisateur</h3>
+              <div class="prose prose-sm mt-4 max-w-none text-gray-500">
+                <p>Message de l'utilisateur</p>
+              </div>
+            </div>
           </div>
       </div>
         <!-- ALERT MESSAGE -->
-        <div id="#error-message" style="display: none;" class="mt-4 mx-auto max-w-4xl">        
+        <div id="error-message" style="display: none;" class="mt-4 mx-auto max-w-4xl">        
           <div class="rounded-md bg-red-50 p-4">
             <div class="flex">
               <div class="flex-shrink-0">
